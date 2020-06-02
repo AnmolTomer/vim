@@ -121,7 +121,7 @@ an unwanted and partially completed command.
 ## 2.3 --> ON OPERATORS AND MOTIONS
 
 - Where
-- d - is the delete operator
+- `d` - is the delete operator
 - motion - is what the operator will operate on. (listed below).
 
 A short list of motions:
@@ -136,9 +136,9 @@ A short list of motions:
 
 **Typing a number before a motion repeats it that many times.**
 
-1. Type 2w to move the cursor two words forward.
+1. Type `2w` to move the cursor two words forward.
 
-2. Type 3e to move the cursor to the end of the third word forward.
+2. Type `3e` to move the cursor to the end of the third word forward.
 
 3. Type 0 (zero) to move to the start of the line.
 
@@ -165,9 +165,9 @@ A short list of motions:
 
 ## Lesson 2.7 --> THE UNDO COMMAND
 
-- Press u to undo the last commands, U to fix a whole line.
+- Press `u` to undo the last commands, `U` to fix a whole line.
 
-- Press Ctrl+R to redo the commands.
+- Press `Ctrl+R` to redo the commands.
 
 ---
 
@@ -214,19 +214,19 @@ A short list of motions:
 
 ## LESSON 3.2 --> THE REPLACE COMMAND
 
-- Type rn to replace a character with n.
+- Type `rn` to replace a character with n.
 
 ---
 
 ## LESSON 3.3 --> THE CHANGE OPERATOR
 
-- Type ce to change until the end of thw word. ce deletes the word and places you in Insert mode.
+- Type `ce` to change until the end of thw word. `ce` deletes the word and places you in Insert mode.
 
 ---
 
 ## Lesson 3.4: MORE CHANGES USING c
 
-- The change operator is used with the same motions as delete.
+> The change operator is used with the same motions as delete.
 
 1.  The change operator works in the same way as delete. The format is:
 
@@ -236,7 +236,7 @@ A short list of motions:
 
 ---
 
-```
+```vim
                                Lesson 3 SUMMARY
 
 
@@ -253,5 +253,89 @@ A short list of motions:
          c   [number]   motion
 
 - Now go on to the next lesson.
+
+```
+
+---
+
+## Lesson 4.1 --> CURSOR LOCATION AND FILE STATUS
+
+- Type `CTRL-g` to show your location in the file and the file status.
+- Type `G` to move to the bottom of the file.
+- `gg` to go to the top of the file.
+- `488G` returns you to the line 488.
+
+---
+
+## Lesson 4.2 --> THE SEARCH COMMAND
+
+> Type `/` followed by a phrase to search for the phrase.
+
+1. In Normal mode type the `/` character. Notice that it and the cursor
+   appear at the bottom of the screen as with the : command.
+
+2. Now type 'errroor' `<ENTER>`. This is the word you want to search for.
+
+3. To search for the same phrase again, simply type n . (N as in next occurence)
+   To search for the same phrase in the opposite direction, type N .
+
+4. To search for a phrase in the backward direction, use ? instead of / .
+
+5. To go back to where you came from press CTRL-O (Keep Ctrl down while
+   pressing the letter o). Repeat to go back further. CTRL-I goes forward.
+
+---
+
+## Lesson 4.3 --> MATCHING PARENTHESES SEARCH
+
+> **Type % to find a matching ),], or }.**
+
+1. Place the cursor on any (, [, or { in the line and now type the % character.
+
+2. The cursor will move to the matching parenthesis or bracket.
+
+3. Type % to move the cursor to the other matching bracket.
+
+- **NOTE: This is very useful in debugging a program with unmatched parentheses!**
+
+---
+
+## Lesson 4.4: THE SUBSITUTE COMMAND
+
+> Type :s/old/new/g to substitute 'new' for 'old'.
+
+1. Type `:s/thee/the` <ENTER> . Note that this command only changes the first occurrence of "thee" in the line.
+
+2. Now type `:s/thee/the/g` . Adding the g flag means to substitute globally in the line, change all occurrences of "thee" in the line.
+
+3. To change every occurrence of a character string between two lines,
+   - Type `:#,#s/old/new/g` where #,# are the line numbers of the range of lines where the substitution is to be done.
+   - Type `:%s/old/new/g` to change every occurrence in the whole file.
+   - Type `:%s/old/new/gc` to find every occurrence in the whole file, with a prompt whether to substitute or not.
+
+---
+
+```vim
+                               Lesson 4 SUMMARY
+
+
+  1. CTRL-G  displays your location in the file and the file status.
+             G  moves to the end of the file.
+     number  G  moves to that line number.
+            gg  moves to the first line.
+
+  2. Typing  /  followed by a phrase searches FORWARD for the phrase.
+     Typing  ?  followed by a phrase searches BACKWARD for the phrase.
+     After a search type  n  to find the next occurrence in the same direction
+     or  N  to search in the opposite direction.
+     CTRL-O takes you back to older positions, CTRL-I to newer positions.
+
+  3. Typing  %  while the cursor is on a (,),[,],{, or } goes to its match.
+
+  4. To substitute new for the first old in a line type    :s/old/new
+     To substitute new for all 'old's on a line type       :s/old/new/g
+     To substitute phrases between two line #'s type       :#,#s/old/new/g
+     To substitute all occurrences in the file type        :%s/old/new/g
+     To ask for confirmation each time add 'c'             :%s/old/new/gc
 
 ```

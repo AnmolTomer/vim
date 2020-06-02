@@ -422,3 +422,102 @@ would be an exact copy of the tutor when you saved it.
 
 
 ```
+
+## Lesson 6.1 --> THE OPEN COMMAND
+
+1. Type the lowercase letter o to open up a line BELOW the cursor and place you in Insert mode.
+
+2. Now type some text and press <ESC> to exit Insert mode.
+
+3. To open up a line ABOVE the cursor, simply type a capital O , rather than a lowercase o. Try this on the line below.
+
+---
+
+## Lesson 6.2 --> THE APPEND COMMAND
+
+> Type `a` to insert text AFTER the cursor.
+
+1. Press e until the cursor is on the end of li .
+
+2. Type an `a` (lowercase) to append text AFTER the cursor.
+
+**NOTE**: a, i and A all go to the same Insert mode, the only difference is where the characters are inserted.
+
+---
+
+## Lesson 6.3--> ANOTHER WAY TO REPLACE
+
+> Type a capital `R` to replace more than one character.
+
+1. Move the cursor to the beginning of the first xxx .
+
+2. Now press R and type the number below it in the second line, so that it replaces the xxx .
+
+3. Press <ESC> to leave Replace mode. Notice that the rest of the line remains unmodified.
+
+_NOTE: Replace mode is like Insert mode, but every typed character deletes an existing character._
+
+---
+
+## Lesson 6.4 --> COPY AND PASTE TEXT
+
+1. Start Visual mode with v and move the cursor to just before "first".
+
+2. Type y to yank (copy) the highlighted text.
+
+3. Move the cursor to the end of the next line: j\$
+
+4. Type p to put (paste) the text. Then type: a second <ESC> .
+
+5. Use Visual mode to select " item.", yank it with y , move to the end of the next line with j\$ and put the text there with p .
+
+NOTE: You can also use y as an operator; yw yanks one word.
+
+---
+
+## Lesson 6.5 --> SET OPTION
+
+> Set an option so a search or substitute ignores case
+
+1. Search for `ignore` by entering: `/ignore <ENTER>` Repeat several times by pressing n .
+
+1. Set the `ic` (Ignore case) option by entering: `:set ic`
+
+1. Now search for 'ignore' again by pressing `n`
+   Notice that Ignore and IGNORE are now also found.
+
+1. Set the 'hlsearch' and 'incsearch' options: `:set hls is`
+
+1. Now type the search command again and see what happens `:/ignore <ENTER>`
+
+1. To disable ignoring case enter: `:set noic`
+
+NOTE: To remove the highlighting of matches enter: `:nohlsearch`
+NOTE: If you want to ignore case for just one search command, use `\c` in the phrase `:/ignore\c` <ENTER>
+
+---
+
+## Lesson 6 --> SUMMARY
+
+```vim
+  1. Type  o  to open a line BELOW the cursor and start Insert mode.
+     Type  O  to open a line ABOVE the cursor.
+
+  2. Type  a  to insert text AFTER the cursor.
+     Type  A  to insert text after the end of the line.
+
+  3. The  e  command moves to the end of a word.
+
+  4. The  y  operator yanks (copies) text,  p  puts (pastes) it.
+
+  5. Typing a capital  R  enters Replace mode until  <ESC>  is pressed.
+
+  6. Typing ":set xxx" sets the option "xxx".  Some options are:
+        'ic' 'ignorecase'       ignore upper/lower case when searching
+        'is' 'incsearch'        show partial matches for a search phrase
+        'hls' 'hlsearch'        highlight all matching phrases
+     You can either use the long or the short option name.
+
+  7. Prepend "no" to switch an option off:   :set noic
+
+```

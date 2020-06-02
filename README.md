@@ -224,7 +224,7 @@ A short list of motions:
 
 ---
 
-## Lesson 3.4: MORE CHANGES USING c
+## Lesson 3.4 --> MORE CHANGES USING c
 
 > The change operator is used with the same motions as delete.
 
@@ -236,9 +236,9 @@ A short list of motions:
 
 ---
 
-```vim
-                               Lesson 3 SUMMARY
+## Lesson 3 --> SUMMARY
 
+```vim
 
 1. To put back text that has just been deleted, type   p .  This puts the deleted text AFTER the cursor (if a line was deleted it will go on the line below the cursor).
 
@@ -300,7 +300,7 @@ A short list of motions:
 
 ---
 
-## Lesson 4.4: THE SUBSITUTE COMMAND
+## Lesson 4.4 --> THE SUBSITUTE COMMAND
 
 > Type :s/old/new/g to substitute 'new' for 'old'.
 
@@ -315,10 +315,9 @@ A short list of motions:
 
 ---
 
+## Lesson 4 --> SUMMARY
+
 ```vim
-                               Lesson 4 SUMMARY
-
-
   1. CTRL-G  displays your location in the file and the file status.
              G  moves to the end of the file.
      number  G  moves to that line number.
@@ -337,5 +336,89 @@ A short list of motions:
      To substitute phrases between two line #'s type       :#,#s/old/new/g
      To substitute all occurrences in the file type        :%s/old/new/g
      To ask for confirmation each time add 'c'             :%s/old/new/gc
+
+```
+
+---
+
+## Lesson 5.1 --> HOW TO EXECUTE AN EXTERNAL COMMAND
+
+> Type `:!` followed by an external command to execute that command.
+
+1. Type the familiar command `:` to set the cursor at the bottom of the screen. This allows you to enter a command-line command.
+
+2. Now type the `!` (exclamation point) character. This allows you to execute any external shell command.
+
+3. As an example type `ls` following the `!` and then hit `<ENTER>`. This will show you a listing of your directory, just as if you were at the shell prompt.
+
+---
+
+## Lesson 5.2 --> MORE ON WRITING FILES
+
+> To save the changes made to the text, type `w fILENAME`.
+
+1. Type `:!dir` or `:!ls` to get a listing of your directory.
+
+2. Choose a filename that does not exist yet, such as TEST.
+
+3. Now type: `:w` TEST (where TEST is the filename you chose.)
+
+4. This saves the whole file (the Vim Tutor) under the name TEST.
+   To verify this, type `:!dir` or `:!ls` again to see your directory.
+
+NOTE: If you were to exit Vim and start it again with `vim TEST` , the file
+would be an exact copy of the tutor when you saved it.
+
+5. Now remove the file by typing (Windows): `:!del TEST`
+   or (Unix): `:!rm TEST`
+
+---
+
+## Lesson 5.3 --> SELECTING TEXT TO WRITE
+
+> To save part of the file, type v motion `:w FILENAME`
+
+1. Move the cursor to this line.
+
+2. Press v and move the cursor to the fifth item below. Notice that the
+   text is highlighted.
+
+3. Press the `:` character. At the bottom of the screen `:'<,'>` will appear.
+
+4. Type w TEST , where TEST is a filename that does not exist yet. Verify
+   that you see `:'<,'>w TEST` before you press `<ENTER>`.
+
+5. Vim will write the selected lines to the file TEST. Use `:!dir` or `:!ls` to see it.
+
+---
+
+## Lesson 5.4 --> RETRIEVING AND MERGING FILES
+
+> To insert the contents of a file, type `:r FILENAME`.
+
+- To read the output of an external command, say output of !ls we can do `:r !ls`. This will place the output of command below the cursor.
+
+## Lesson 5 --> SUMMARY
+
+```vim
+
+  1.  :!command  executes an external command.
+
+      Some useful examples are:
+         (Windows)        (Unix)
+          :!dir            :!ls            -  shows a directory listing.
+          :!del FILENAME   :!rm FILENAME   -  removes file FILENAME.
+
+  2.  :w FILENAME  writes the current Vim file to disk with name FILENAME.
+
+  3.  v  motion  :w FILENAME  saves the Visually selected lines in file
+      FILENAME.
+
+  4.  :r FILENAME  retrieves disk file FILENAME and puts it below the
+      cursor position.
+
+  5.  :r !dir  reads the output of the dir command and puts it below the
+      cursor position.
+
 
 ```

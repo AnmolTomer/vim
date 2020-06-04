@@ -521,3 +521,82 @@ NOTE: If you want to ignore case for just one search command, use `\c` in the ph
   7. Prepend "no" to switch an option off:   :set noic
 
 ```
+
+## Lesson 7.1 --> Getting Help
+
+> Vim has a comprehensive on-line help system. To get started, try one of these three:
+
+- press the `<HELP>` key (if you have one)
+- press the `<F1>` key (if you have one)
+- type :help `<ENTER>`
+
+Read the text in the help window to find out how the help works.
+Type CTRL-W CTRL-W to jump from one window to another.
+Type `:q <ENTER>` to close the help window.
+
+You can find help on just about any subject, by giving an argument to the ":help" command. Try these (don't forget pressing `<ENTER>`):
+
+        :help w
+        :help c_CTRL-D
+        :help insert-index
+        :help user-manual
+
+---
+
+## Lesson 7.2 --> CREATE A STARTUP SCRIPT
+
+> Enable Vim features
+
+Vim has many more features than Vi, but most of them are disabled by
+default. To start using more features you have to create a "vimrc" file.
+
+1. Start editing the "vimrc" file. This depends on your system:
+   `:e ~/.vimrc` for Unix
+   `:e \$VIM/\_vimrc` for Windows
+
+2. Now read the example "vimrc" file contents: `:r \$VIMRUNTIME/vimrc_example.vim`
+
+3. Write the file with: `:w`
+
+The next time you start Vim it will use syntax highlighting. You can add all your preferred settings to this "vimrc" file. For more information type `:help vimrc-intro`.
+
+---
+
+## Lesson 7.3: COMPLETION
+
+> Command line completion with CTRL-D and `<TAB>`
+
+1. Make sure Vim is not in compatible mode: `:set nocp`
+
+2. Look what files exist in the directory: `:!ls` or `:!dir`
+
+3. Type the start of a command: `:e`
+
+4. Press CTRL-D and Vim will show a list of commands that start with "e".
+
+5. Type `d<TAB>` and Vim will complete the command name to ":edit".
+
+6. Now add a space and the start of an existing file name: :edit FIL
+
+7. Press `<TAB>`. Vim will complete the name (if it is unique).
+
+NOTE: Completion works for many commands. Just try pressing CTRL-D and `<TAB>`. It is especially useful for :help .
+
+---
+
+## Lesson 7 --> SUMMARY
+
+```vim
+1. Type  :help  or press <F1> or <HELP>  to open a help window.
+
+2. Type  :help cmd  to find help on  cmd .
+
+3. Type  CTRL-W CTRL-W  to jump to another window.
+
+4. Type  :q  to close the help window.
+
+5. Create a vimrc startup script to keep your preferred settings.
+
+6. When typing a  :  command, press CTRL-D to see possible completions. Press <TAB> to use one completion.
+
+```

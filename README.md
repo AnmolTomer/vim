@@ -600,3 +600,5 @@ NOTE: Completion works for many commands. Just try pressing CTRL-D and `<TAB>`. 
 6. When typing a  :  command, press CTRL-D to see possible completions. Press <TAB> to use one completion.
 
 ```
+
+- This concludes the Vim Tutor. It was intended to give a brief overview of the Vim editor, just enough to allow you to use the editor fairly easily. It is far from complete as Vim has many many more commands. Read the user manual next: `:help user-manual`.

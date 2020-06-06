@@ -602,3 +602,5 @@ NOTE: Completion works for many commands. Just try pressing CTRL-D and `<TAB>`. 
 ```
 
 - This concludes the Vim Tutor. It was intended to give a brief overview of the Vim editor, just enough to allow you to use the editor fairly easily. It is far from complete as Vim has many many more commands. Read the user manual next: `:help user-manual`.
+
+- Now that you know your way around VIM, try editing and setting vimrc file. [This](https://www.youtube.com/watch?v=n9k9scbTuvQ) video is a good first start.

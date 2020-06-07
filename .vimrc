@@ -4,7 +4,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 "call vundle#begin('~/.vim/vundle')
 
 "call vundle#end()
-
+let g:ycm_global_ycm_extra_conf = '/home/cosmic/.vim/plugged/YouCompleteMe/.ycm_extra_conf.py
+"just do ./install.py --all to install for all detected languages
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4

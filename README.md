@@ -606,3 +606,5 @@ NOTE: Completion works for many commands. Just try pressing CTRL-D and `<TAB>`. 
 - Now that you know your way around VIM, try editing and setting vimrc file. [This](https://www.youtube.com/watch?v=n9k9scbTuvQ) video is a good first start.
 
 - Basic cut, copy, paste. [Here](https://vim.fandom.com/wiki/Copy,_cut_and_paste)
+
+- Vim Autocomplete and other helpful features. [Here](https://pastebin.com/4AFNr7M3)

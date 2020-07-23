@@ -4,6 +4,8 @@ Resources and Notes made while learning VIM.
 
 ## Notes From - The Vim Tutorial Part One - Basic Commands: Video [here](https://www.youtube.com/watch?v=ER5JYFKkYDg)
 
+- Great playlist to configure NeoVim Step by Step: [Link](https://www.youtube.com/playlist?list=PLhoH5vyxr6QqPtKMp03pcJd_Vg8FZ0rtg)
+
 - **Why learn VIM ?**
 
 - It has some pretty weird things to it, uses strange key bindings, a lot of stuff doesn't makes any sense. It is way different from any other text editors you have used before, why bother learning VIM. For people who run UNIX like operating systems such as Linux, it makes a lot of sense. VI or VIM is installed on every unix like OS out there. On servers often VIM is the only text editor installed on the system with a new install. Reason behind learning vim is it is such a productive and powerful tool.

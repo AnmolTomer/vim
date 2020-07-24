@@ -2,7 +2,8 @@
 
 ## NeoVim: Ready for Development and Competitive Programming
 
-- Ref: NeoVim Directory for config files.
+- ### Ref: ```nvim``` Directory for config files.
+
 ![Screenshot](https://i.imgur.com/jzE8KZ2.png)
 
 Resources and Notes made while learning VIM.

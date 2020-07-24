@@ -4,7 +4,10 @@ Resources and Notes made while learning VIM.
 
 ## Notes From - The Vim Tutorial Part One - Basic Commands: Video [here](https://www.youtube.com/watch?v=ER5JYFKkYDg)
 
-- Great playlist to configure NeoVim Step by Step: [Link](https://www.youtube.com/playlist?list=PLhoH5vyxr6QqPtKMp03pcJd_Vg8FZ0rtg)
+## Great playlist to configure NeoVim Step by Step: [Link](https://www.youtube.com/playlist?list=PLhoH5vyxr6QqPtKMp03pcJd_Vg8FZ0rtg)
+
+## Git Config for NeoVim : Update July 2020: [Link](https://github.com/ChristianChiarulli/nvim)
+
 
 - **Why learn VIM ?**
 

@@ -41,6 +41,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'justinmk/vim-sneak'
     Plug 'wakatime/vim-wakatime'
     Plug 'ChristianChiarulli/codi.vim'
+    Plug 'jakobkogler/Algorithm-DataStructures'
 " Keeping up to date with master
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 

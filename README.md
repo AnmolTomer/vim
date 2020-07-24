@@ -1,5 +1,10 @@
 # vim
 
+## NeoVim: Ready for Development and Competitive Programming
+
+- Ref: NeoVim Directory for config files.
+![Screenshot](https://i.imgur.com/jzE8KZ2.png)
+
 Resources and Notes made while learning VIM.
 
 ## Notes From - The Vim Tutorial Part One - Basic Commands: Video [here](https://www.youtube.com/watch?v=ER5JYFKkYDg)
